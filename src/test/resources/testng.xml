@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="trigonometry">
+    <listeners>
+        <listener class-name="TestListeners"></listener>
+    </listeners>
+    <test name="Cosine Calc Test">
+        <parameter name="trigonometry" value="Cosine"></parameter>
+        <groups>
+            <run>
+                <include name="cos"/>
+            </run>
+        </groups>
+        <classes><class name="CosCalcTest"></class>
+        </classes>
+    </test>
+</suite>
