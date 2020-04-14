@@ -1,10 +1,12 @@
+package functions;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class SinCalcTest extends BaseTestForAllTests {
-    @Test(dataProvider = "dataForSinDouble")
-    public void sinDouble(double firstValue,  double expectedValue) {
+    @Test(dataProvider = "dataForSinDouble", groups = "trigonometry")
+    public void sinDouble(double firstValue, double expectedValue) {
         double sinDoubleResult = calculator.sin(firstValue);
         Assert.assertEquals(sinDoubleResult, expectedValue, "Invalid result");
 

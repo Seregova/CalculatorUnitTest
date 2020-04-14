@@ -1,3 +1,5 @@
+package functions;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -15,7 +17,7 @@ public class PositLongCalcTest extends BaseTestForAllTests {
         return new Object[][]{
                 {4, true},
                 {-1, false},
-                {10000, true}
+                {0, false}
         };
     }
 }

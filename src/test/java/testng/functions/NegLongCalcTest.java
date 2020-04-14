@@ -1,3 +1,5 @@
+package functions;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -13,7 +15,7 @@ public class NegLongCalcTest extends BaseTestForAllTests {
     public Object[][] dataForNegLong() {
         return new Object[][]{
                 {4, false},
-                {-1, true},
+                {0, false},
                 {-100646700, true}
         };
     }

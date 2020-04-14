@@ -1,10 +1,12 @@
+package functions;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class TangCalcTest extends BaseTestForAllTests {
 
-    @Test(dataProvider = "dataForTgDouble")
+    @Test(dataProvider = "dataForTgDouble", groups = "trigonometry")
     public void tgDouble(double firstValue, double expectedValue) {
         double tgDoubleResult = calculator.tg(firstValue);
         Assert.assertEquals(tgDoubleResult, expectedValue, "Invalid result");

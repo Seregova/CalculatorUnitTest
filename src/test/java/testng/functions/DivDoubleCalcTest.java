@@ -1,3 +1,5 @@
+package functions;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -15,7 +17,7 @@ public class DivDoubleCalcTest extends BaseTestForAllTests {
         return new Object[][]{
                 {4.55, 1.4, 3.25},
                 {-12.99, 3, -4.33},
-                {1000.1,10, 100.01}
+                {1000.1, 10, 100.01}
         };
     }
 }

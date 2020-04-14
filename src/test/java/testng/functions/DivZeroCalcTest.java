@@ -1,10 +1,13 @@
+package functions;
+
 import org.testng.annotations.Test;
 
 public class DivZeroCalcTest extends BaseTestForAllTests {
 
     @Test(expectedExceptions = NumberFormatException.class)
     public void divLongByZero() {
-        long divLongResult = calculator.div(1, 0);
+        long divLongResult;
+        divLongResult = calculator.div(1, 0);
     }
 
     @Test(expectedExceptions = NumberFormatException.class)

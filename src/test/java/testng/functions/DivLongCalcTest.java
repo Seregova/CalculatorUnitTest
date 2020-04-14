@@ -1,3 +1,5 @@
+package functions;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -15,7 +17,7 @@ public class DivLongCalcTest extends BaseTestForAllTests {
         return new Object[][]{
                 {100, 1, 100},
                 {-12, 3, -4},
-                {1000,10, 100}
+                {1000, 10, 100}
         };
     }
 }
