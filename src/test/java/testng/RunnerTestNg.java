@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Runner {
+public class RunnerTestNg {
     public static void main(String[] args) {
         TestNG testNg = new TestNG();
         testNg.addListener(new TestNgTestListener());

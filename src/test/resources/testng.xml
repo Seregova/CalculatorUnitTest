@@ -1,16 +1,40 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="trigonometry">
     <listeners>
-        <listener class-name="TestListeners"></listener>
+        <listener class-name="testng.listeners.TestNgTestListener"></listener>
     </listeners>
     <test name="Cosine Calc Test">
         <parameter name="trigonometry" value="Cosine"></parameter>
         <groups>
             <run>
-                <include name="cos"/>
+                <include name="trigonometry"/>
             </run>
         </groups>
-        <classes><class name="CosCalcTest"></class>
+        <classes><class name="testng.functions.CosCalcTest"></class>
+        </classes>
+    </test>
+    <test name= "Tangent Calc Test">
+        <parameter name="trigonometry" value="Tangent"></parameter>
+        <groups>
+            <run>
+                <include name="trigonometry"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testng.functions.TangCalcTest">
+            </class>
+        </classes>
+    </test>
+    <test name= "Sine Calc Test">
+        <parameter name="trigonometry" value="Sine"></parameter>
+        <groups>
+            <run>
+                <include name="trigonometry"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testng.functions.SinCalcTest">
+            </class>
         </classes>
     </test>
 </suite>

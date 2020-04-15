@@ -1,4 +1,4 @@
-package functions;
+package testng.functions;
 
 import com.epam.tat.module4.Calculator;
 import org.testng.annotations.AfterClass;

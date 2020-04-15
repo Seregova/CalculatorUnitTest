@@ -1,19 +1,20 @@
-package testng.functions;
+package junit.functions;
 
 import com.epam.tat.module4.Calculator;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.junit.BeforeClass;
+import org.junit.AfterClass;
 
 public class BaseTestForAllTests {
-    Calculator calculator;
+    public static Calculator calculator;
 
-    @BeforeClass(alwaysRun = true)
-    public void setUp() {
+
+    @BeforeClass
+    public static void setUp() {
         calculator = new Calculator();
     }
 
     @AfterClass
-    public void tearDown() {
+    public static void tearDown() {
         calculator = null;
     }
 

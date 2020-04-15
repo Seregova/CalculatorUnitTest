@@ -11,5 +11,5 @@ import org.junit.runners.Suite;
         MultLongCalcTest.class,
         MultDoubleCalcTest.class
 })
-public class Runner {
-}
+
+public class RunnerTestNgJUnit {}

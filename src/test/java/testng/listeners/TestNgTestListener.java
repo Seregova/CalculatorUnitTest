@@ -4,7 +4,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class TestListeners implements ITestListener {
+public class TestNgTestListener implements ITestListener {
 
     public void onTestStart(ITestResult result) {
     }

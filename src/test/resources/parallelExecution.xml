@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel suite" parallel="methods" thread-count="2">
+    <test name="ParallelTest">
+        <classes>
+            <class name="testng.functions.SumLongCalcTest"></class>
+            <class name="testng.functions.SumDoubleCalcTest"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,4 +1,4 @@
-package functions;
+package testng.functions;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
