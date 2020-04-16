@@ -7,8 +7,7 @@ import org.junit.Test;
 public class MultLongCalcTest extends BaseTestForAllTests {
     @Test
     public void longMultLong() {
-        double multLongResult = calculator.mult(777, 10);
-        Assert.assertEquals(7770, multLongResult, 0.0);
+        long multLongResult = calculator.mult(777, 10);
+        Assert.assertEquals("Invalid result", 7770, multLongResult);
     }
-
 }
